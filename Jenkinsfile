@@ -31,7 +31,6 @@ pipeline{
                 }
             }
         }
-        stages{
             stage("INSTALL"){
                 steps{
                     script{
@@ -62,7 +61,6 @@ pipeline{
                 }
             }
         }
-    }
     post{
         always{
             sh "docker image rm dockername/projectname:$COMMIT_HASH_PREV_2"
