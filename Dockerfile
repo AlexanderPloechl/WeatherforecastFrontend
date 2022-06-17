@@ -13,5 +13,6 @@ ADD README.md /app
 WORKDIR /app
 
 RUN npm install
+RUN npm install react-scripts --save
 
 CMD [ "npm", "start" ]
